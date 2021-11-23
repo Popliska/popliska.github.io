@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 2</title>
+
+        <style type="text/css">
+
+          *{
+		margin:0;
+		padding:0;
+	       }
+
+        h1 {
+            color: antiquewhite;
+           background-color: blueviolet;
+           font-size: 45px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           text-align: center
+           }
+
+        h2 {
+		color:#ffffff;
+		font-size: 32px;
+		padding:5px 5px 5px 0px;
+		text-align: center;
+        background-color: blueviolet;
+	       } 
+
+         ol,ul,li{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: rgb(106, 18, 109);}    
+
+        nav{
+				height:auto;
+				padding:20px;
+				background-color: #9CF9AC;
+				text-align: center;
+           }   
+           
+			main{
+				height:0 auto;
+				background-color:#a7e0e7;
+				padding:20px;
+			}   
+            section{
+				background: color rgb(148, 189, 114);;
+				margin:20px;
+				padding:20px;
+				border:solid 5px #7b319e;}
+        
+            footer{
+				height:50px;
+				padding: 20px;
+				text-align: center;
+				background-color:#a2e787;}
+
+                .menu{height: 60;}
+        .menu li{list-style-type: none;width: 100px;margin: 5px 5px;display: inline-block;}
+        </style>
+        
+    </head>
+    <body>
+
+        <header>
+            <h1>Listas en HTML</h1>
+        </header>
+        <nav>  
+            <ul class="menu">
+        	<li><a href="../primera pagina/mi primera pagina.html">Primera Página</a></li>
+        	<li><a href="../tablas/Tablas.html">Tablas</a></li>
+        	<li><a href="../audio/audio.html">Audio</a></li>
+        	<li><a href="../animacion/animacion.html">Animación</a></li>
+			<li><a href="../video/videos.html">video</a></li>
+       	 	<li><a href="../enlaces/enlaces.html">Enlaces</a></li>
+       	 	<li><a href="../formularios/formularios.html">Formulario</a></li>
+        </ul>
+    </nav>
+        <main>
+            <section>
+                <h2>Lista desordenada o viñeta</h2>
+                <ul>
+                    <li>Galletas</li>
+                    <li>Chocolate</li>
+                    <li>Paletas</li>
+                    <li>Caramelos</li>
+                    <li>Malvaviscos</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Lista Ordenada o con viñeta enumerada</h2>
+                <ol>
+                    <li>Pasteles</li>
+                    <li>Chocolates</li>
+                    <li>Cacahuates</li>
+                    <li>Mazapanes</li>
+                    <li>Chicles</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Lista Mixta</h2>
+                <ol>
+                    <li>Pan</li>
+                    <li>Galletas</li>
+                    <li>Pasteles</li>
+                         <ul>
+                            <li>chocolate</li>
+                            <li>Flores</li>
+                            <li>Caramelos</li>
+                         </ul>
+                </ol>
+            </section>
+            <section>
+                <h2>Lista de descripción</h2>
+                <dl>
+                    <dt>Usabilidad</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dicta sit deserunt, excepturi molestias laborum.</dd>
+                    <dt>Accesibilidad</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil eveniet repellendus autem ex velit labore molestias quasi sapiente rem. Vero sed, modi, iusto facilis nemo cupiditate sequi voluptatibus tempora.</dd>
+                    <dte>Interactividad</dte>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nesciunt provident, assumenda, iste laborum mollitia blanditiis numquam? Vero accusantium, mollitia.</dd>
+                </dl>
+            </section>
+            <section>
+                <h2>Lista con cambio de viñetas</h2>
+                <ol>
+					<li>Mamíferos
+					<ul style="list-style-type:disc;">
+						<li>Vaca</li>
+						<li>Humanos</li>
+						<li>Perros</li>
+					</ul>
+					</li>
+					<li>Reptiles
+					<ul style="list-style-type:square;">
+						<li>Lagartija</li>
+						<li>Iguana</li>
+						<li>Serpiente</li>
+						<li>Camaleon</li>
+					</ul>
+					</li>
+					<li>Anfibios
+					<ul style="list-style-type:upper-roman;">
+						<li>Rana</li>
+						<li>Salmandra</li>
+						<li>Cecilia</li>
+					</ul>
+					</li>
+					<li>Felinos
+					<ul style="list-style-image:url(../3504413.png)">
+						<li>León</li>
+						<li>Pantera</li>
+						<li>Tigre</li>
+					</ul>
+					</li>
+					<li>Caninos</li>
+					<li>Vertebrados</li>
+            </section>
+
+            <footer></footer>
+        </main>
+    </body>
+</html>

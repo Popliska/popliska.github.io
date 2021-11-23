@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 2</title>
+
+        <style type="text/css">
+        *{
+		margin:0;
+		padding:0;
+	}
+	h1{
+		color:#fabc28;
+		font-size:48px;
+	}
+	h2{
+		color:#E2d5d0;
+		font-size: 32px;
+		padding:5px 5px 5px 0px;
+		text-align: center;
+	}
+	header,footer,main,nav{
+				width:1024px;
+				margin:0 auto;/*centra la caja automaticamente en horizontal*/
+			}
+			header{
+				height:100px;
+				padding: 20px;
+				text-align: center;
+				background-color:#2a2642;
+			}
+			nav{
+				height:5px;
+				padding:20px;
+				background-color:#E2d5d0;
+				text-align: center;
+			}
+			main{
+				height:0 auto;
+				background-color:#FABC28;
+				padding:20px;
+			}
+			section{
+				background-color:#151723;
+				margin:20px;
+				padding:20px;
+				border:solid 5px #E2d5d0;
+			}
+			footer{
+				height:50px;
+				padding: 20px;
+				text-align: center;
+				background-color:#2a2642;
+			}
+			table{
+				border-collapse:collapse;
+				margin: 0 auto;
+			}
+	th,td{
+		padding:10px;
+	}
+	th{
+	text-align: center;
+	/*background-color: #2a2642;*/
+	color:#fabc28;
+	}
+	td{
+		text-align:left;
+		/*background-color:#E2d5d0;*/
+		color:#7970dd;
+	}
+	#t01{
+		border:#b3f5ad;
+	}
+	#t01 td{
+		background-color: #8b2c72;
+		color:rgb(174, 0, 255);
+	}
+	#t01 th{
+		background-color:#D79AF1;
+		color:#510C4E;
+	}
+	#t02 th, #t02 td{
+		padding: :15px;
+		text-align: left;
+	}
+	#t02 th{
+		background-color: #2A3642
+	}
+	#t02 tr:nth-child(even){
+		background-color: #FE724C;
+	}
+	#t02 tr:nth-child(odd){
+		background-color: #77E55D
+	}
+	.tabla th{
+		background-color:#FF4C4F;
+	}
+	.tabla td{
+		background-color: #F5BEBF;
+	}
+	#tablaaux tr:hover{
+		background-color:#92F96D;
+	}
+
+  .menu{height: 60;}
+        .menu li{list-style-type: none;width: 100px;margin: 5px 5px;display: inline-block;}
+        </style>
+        
+    </head>
+    <body>
+
+        <header>
+            <h1>Tablas en HTML</h1>
+        </header>
+        <nav>  
+           <ul class="menu">
+          <li><a href="../primera pagina/mi primera pagina.html">mi_primera_pagina</a></li>
+        	<li><a href="../listas/listas.html">Listas</a></li>
+        	<li><a href="../enlaces/enlaces.html">Enlaces</a></li>
+        	<li><a href="../audio/audio.html">Audio</a></li>
+        	<li><a href="../animacion/animacion.html">Animación</a></li>
+			<li><a href="../video/videos.html">video</a></li>
+       	 	<li><a href="../enlaces/enlaces.html">Enlaces</a></li>
+      </ul>
+    </nav>
+        <main>
+
+            <section>
+                <h2>Tabla simple</h2>
+			<table class="tabla" border="1">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>E-mail</th>
+						<th>Teléfono</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Tulio Triviño</td>
+						<td>tulio_31@gmail.com</td>
+						<td>2222345622</td>
+					</tr>
+					<tr>
+						<td>Juanin Juan Jarri</td>
+						<td>juanin_31@hotmail.com</td>
+						<td>2122335622</td>
+					</tr>
+					<tr>
+						<td>Juan Carlos Bodoque</td>
+					<td>juan_c_b_31@gmail.com</td>
+						<td>2112345689</td>
+					</tr>
+					<tr>
+						<td>Patricia Ana Triviño</td>
+						<td>patana_31@gmail.com</td>
+						<td>2211998876</td>
+					</tr>
+					<tr>
+						<td>Policarpo Avendaño</td>
+						<td>poli_ave_31@yahoo.com.mx</td>
+						<td>2132567889</td>
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+            </section>
+            <section>
+                <h2>Tabla con celda que abarca dos columnas</h2>
+                    <table class="tabla" border="1">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th colspan="2">Teléfonos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Balón Bon Bola</td>
+                                <td>222 2348972</td>
+                                <td>222 4589704</td>
+                            </tr>
+                            <tr>
+                                <td>Mico El Microfóno</td>
+                                <td>555 879302</td>
+                                <td>555 982093</td>
+                            </tr>
+                            <tr>
+                                <td>Joe Pino</td>
+                                <td>211 998304</td>
+                                <td>211 890384</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+              </section>
+              <section>
+                <h2>Tabla modificada con CSS</h2>
+                    <table width="600" border="1" id="t01">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Edad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cesar</td>
+                                <td>Bailón</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Mario</td>
+                                <td>Hugo</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Juan</td>
+                                <td>Guantecillo</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </section>
+                <section>
+                  <h2>Tabla simple</h2>
+                  <table id="t02" border="1">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>E-mail</th>
+                        <th>Teléfono</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Tulio Triviño</td>
+                        <td>tulio_31@gmail.com</td>
+                        <td>2222345622</td>
+                      </tr>
+                      <tr>
+                        <td>Juanin Juan Jarri</td>
+                        <td>juanin_31@hotmail.com</td>
+                        <td>2122335622</td>
+                      </tr>
+                      <tr>
+                        <td>Juan Carlos Bodoque</td>
+                        <td>juan_c_b_31@gmail.com</td>
+                        <td>2112345689</td>
+                      </tr>
+                      <tr>
+                        <td>Patricia Ana Triviño</td>
+                        <td>patana_31@gmail.com</td>
+                        <td>2211998876</td>
+                      </tr>
+                      <tr>
+                        <td>Policarpo Avendaño</td>
+                        <td>poli_ave_31@yahoo.com.mx</td>
+                        <td>2132567889</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                  </table>
+              </section>
+                  <section>
+                      <table class="tabla" id="tablaaux" width="500" border="1">
+          <thead>
+              <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Género</th>
+              <th>Deporte</th>
+            </tr>
+          </thead>
+           <tbody>
+            <tr>
+              <td>Juan Carlos Bodoque</td>
+              <td>15</td>
+              <td>Masculino</td>
+              <td>Basquetbol</td>
+            </tr>
+            <tr>
+              <td>Patricia Ana</td>
+              <td>13</td>
+              <td>Femenino</td>
+              <td>Futbol</td>
+            </tr>
+            <tr>
+              <td>Juanin Juan Jarry</td>
+              <td>13</td>
+              <td>Masculino</td>
+              <td>Voleibol</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+        
+                  </section>
+        </main>
+    </body>
+</html>

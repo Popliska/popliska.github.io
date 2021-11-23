@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style type="text/css">
+*{margin:0;
+        padding:0;}
+
+        h1{color: rgb(206, 39, 39);font-size: 48px;}
+
+        h2{color:darkorchid;font-size:32px;padding:15px ;}
+
+        header, nav ,main, footer{width:960px;margin:0 auto ;}
+
+        header,footer {height:100px;padding:20px;text-align: center;background-color: rgb(165, 57, 156);}
+
+        nav{height: 15px;padding:20px;text-align: center; background-color: burlywood ;}
+
+        main{height:auto;background-color: rgb(93, 93, 207);padding: 20px;}
+        
+        section{background-color: darkorange;margin:30px;padding: 20px;border: solid 5px rgb(51, 117, 129);}
+
+        p{padding: 15px;}
+
+        .menu{height: 60;}
+        .menu li{list-style-type: none;width: 100px;margin: 5px 5px;display: inline-block;}
+        </style>    
+
+    </head>   
+
+    <body>
+
+<header>
+    <h1></h1>
+</header>
+
+<nav>
+    <ul class="menu">
+        <li><a href="../primera pagina/mi primera pagina.html">mi_primera_pagina</a></li>
+        	<li><a href="../listas/listas.html">Listas</a></li>
+        	<li><a href="../tablas/Tablas.html">Tablas</a></li>
+        	<li><a href="../audio/audio.html">Audio</a></li>
+        	<li><a href="../animacion/animacion.html">Animación</a></li>
+			<li><a href="../video/videos.html">video</a></li>
+       	 	<li><a href="../enlaces/enlaces.html">Enlaces</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2> inserción de formulario</h2>
+        <p></p>
+        <form>
+            <label>nombre</label>
+            <input type="text" id="idname" name="nombre">
+            <input type="button" id="idboton" name="enviar" value="enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2>insercion formulario con casillas de verificación</h2>
+        <p></p>
+        <form>
+            <label>¿Qué generos musicales prefieres?</label>
+            <input type="checkbox" id="generom1" name="generom1" value="pop">
+            <label for="pop">pop</label>
+            <input type="checkbox" id="generom2" name="generom2" value="rock">
+            <label for="rock">rock</label>
+            <input type="button" id="boton2" name="enviar2" value="enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2> formulario de ingreso o login</h2>
+        <p></p>
+        <form>
+            <label>usuario</label>
+            <input type="text">
+            <label>contraseña</label>
+            <input>
+            <label for="pop"></label>
+        
+        </form>
+    </section>
+
+
+</main>
+
+    </body>
+</html>
